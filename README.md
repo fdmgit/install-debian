@@ -1,2 +1,2 @@
 # install-ubuntu
-Install Script for Ubuntu 20.04
+Install Script for Debian 11
