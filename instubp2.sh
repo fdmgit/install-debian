@@ -16,8 +16,8 @@ systemctl disable clamav-freshclam
 ##############################
 
 
-echo | add-apt-repository ppa:ondrej/php
-echo | add-apt-repository ppa:ondrej/apache2
+echo | add-apt-repository packages.sury.org/php
+echo | add-apt-repository packages.sury.org/apache2
 apt update
 apt upgrade -y
 
@@ -306,10 +306,9 @@ systemctl restart php8.2-fpm.service
 
 
 ##############################
-#### INstall Redis Server
+#### Install Redis Server
 ##############################
 
-echo | add-apt-repository ppa:redislabs/redis
 apt update
 apt install redis -y
 systemctl enable --now redis-server
