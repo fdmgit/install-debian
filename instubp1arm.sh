@@ -25,8 +25,6 @@ echo "root:$1" | chpasswd   # set root password -
 #### Install Virtualmin
 ##############################
 
-#wget -O virtualmin-install-pre-release.sh https://raw.githubusercontent.com/virtualmin/virtualmin-install/d7fcb4ea35b5545417a38b7af4c4d97dbe45d591/virtualmin-install.sh
 wget -O virtualmin-install_arm.sh https://raw.githubusercontent.com/fdmgit/install-debian/main/virtualmin-install_arm.sh
-#sh virtualmin-install-pre-release.sh -y
 sh virtualmin-install_arm.sh -y
 reboot
