@@ -1277,6 +1277,7 @@ disable_selinux() {
   done
 }
 
+
 # Changes that are specific to OS
 case "$os_type" in
 "fedora" | "centos" | "centos_stream" | "rhel" | "rocky" | "almalinux" | "ol" | "cloudlinux")
