@@ -349,6 +349,24 @@ wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/server-level.tar.g
 tar -xvzf server-level.tar.gz
 rm server-level.tar.gz
 
+cd /root
+
+###################################
+#### add logo and styles
+###################################
+
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/logostyle.zip
+unzip logostyle.zip
+cp logo.png /etc/webmin/authentic-theme/
+cp logo_welcome.png /etc/webmin/authentic-theme/
+cp styles.css /etc/webmin/authentic-theme/
+rm logo.png
+rm logo_welcome.png
+rm styles.css
+rm logostyle.zip
+
+cd /root
+
 ###################################
 #### new fail2ban and jail
 ###################################
