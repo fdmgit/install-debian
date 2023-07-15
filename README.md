@@ -10,7 +10,7 @@ wget https://raw.githubusercontent.com/fdmgit/install-debian-11/main/)load_inst_
 bash load_inst_files_arm.sh
 ```
 
-To install for x86 use:
+To install for **x86** use:
 
 ```
 wget https://raw.githubusercontent.com/fdmgit/install-debian-11/main/)load_inst_files.sh
