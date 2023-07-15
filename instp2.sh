@@ -313,6 +313,15 @@ systemctl restart php8.0-fpm.service
 systemctl restart php8.1-fpm.service
 systemctl restart php8.2-fpm.service
 
+######################################
+#### install additional Python modules
+######################################
+
+apt install python3-venv -y
+apt install python3-pip -y
+
+cd /root
+
 
 ##############################
 #### Install Redis Server
