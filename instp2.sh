@@ -9,6 +9,8 @@ systemctl disable usermin
 systemctl disable dovecot
 systemctl disable proftpd
 systemctl disable clamav-freshclam
+systemctl disable clamav-daemon
+systemctl disable postgrey
 
 
 ##############################
@@ -319,6 +321,20 @@ cat >> /etc/sysctl.conf <<'EOF'
 vm.overcommit_memory = 1
 
 EOF
+
+###################################
+#### new fail2ban and jail
+###################################
+
+wget https://raw.githubusercontent.com/fdmgit/install-debian-11/main/jail-deb11.local
+cd /etc/fail2ban
+mv jail.local jail.local.orig
+cp /root/jail-deb11.local jail.local
+rm /root/jail-deb11.local
+touch /var/log/auth.log
+
+cd /root
+
 
 ##############################
 #### Update locate DB
