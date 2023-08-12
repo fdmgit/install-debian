@@ -443,5 +443,6 @@ apt autoremove -y # clean installed apps
 cd /root
 rm instp1arm.sh
 rm instp2arm.sh
+rm load_inst_files.sh
 
 reboot
