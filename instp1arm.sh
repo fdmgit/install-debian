@@ -33,6 +33,15 @@ rm gat_Linux_arm64.tar.gz
 rm LICENSE
 rm README.md
 
+###################################
+#### Build aliases file
+###################################
+
+cd /root
+touch .bash_aliases
+echo "alias jos='joshuto'" >> .bash_aliases
+echo "alias gc='gat'" >> .bash_aliases
+
 ##############################
 #### Install Virtualmin
 ##############################
