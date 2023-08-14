@@ -48,14 +48,14 @@ echo "alias gc='gat'" >> .bash_aliases
 
 if [ -d /root/.ssh ]; then 
     echo ".ssh exists"
-elsif
+else
     mkdir /root/.ssh
 fi
 
 cd /root/.ssh
-wget
+wget https://raw.githubusercontent.com/fdmgit/virtualmin/main/authorized_keys
 
-
+cd /root
 
 ##############################
 #### Install Virtualmin
